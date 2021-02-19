@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		B570179025DFE8B4002FEE4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570178F25DFE8B4002FEE4D /* ViewController.swift */; };
 		B570179225DFE98C002FEE4D /* HistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570179125DFE98C002FEE4D /* HistoryListViewController.swift */; };
 		B570179525DFE9B2002FEE4D /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570179425DFE9B2002FEE4D /* HistoryDetailView.swift */; };
+		B570179825DFED66002FEE4D /* HistoryListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570179725DFED66002FEE4D /* HistoryListManager.swift */; };
 		B9369D38AD0F4DC753A4DFA1 /* Pods_DBMajiTestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A900ED688FAB61C5F74954 /* Pods_DBMajiTestDemo.framework */; };
 		C24905E1F01B440045CC63F4 /* Pods_DBMajiTestDemo_DBMajiTestDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1101C916C95DAD0A06E8DFBE /* Pods_DBMajiTestDemo_DBMajiTestDemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		B570178F25DFE8B4002FEE4D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B570179125DFE98C002FEE4D /* HistoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewController.swift; sourceTree = "<group>"; };
 		B570179425DFE9B2002FEE4D /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		B570179725DFED66002FEE4D /* HistoryListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,6 @@
 				4D118C3357B1BDF6E7FC5514 /* Pods-DBMajiTestDemoTests.debug.xcconfig */,
 				959D95897438C4E2989786BB /* Pods-DBMajiTestDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,6 +137,7 @@
 			children = (
 				B570175E25DFE6D5002FEE4D /* AppDelegate.swift */,
 				B570176025DFE6D5002FEE4D /* SceneDelegate.swift */,
+				B570179625DFED54002FEE4D /* manager */,
 				B570178E25DFE8B4002FEE4D /* controller */,
 				B570179325DFE9A2002FEE4D /* view */,
 				B570176425DFE6D5002FEE4D /* Main.storyboard */,
@@ -179,6 +181,14 @@
 				B570179425DFE9B2002FEE4D /* HistoryDetailView.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		B570179625DFED54002FEE4D /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				B570179725DFED66002FEE4D /* HistoryListManager.swift */,
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 		BA2C7B36806D4FD861DA8936 /* Frameworks */ = {
@@ -434,6 +444,7 @@
 				B570175F25DFE6D5002FEE4D /* AppDelegate.swift in Sources */,
 				B570179525DFE9B2002FEE4D /* HistoryDetailView.swift in Sources */,
 				B570176125DFE6D5002FEE4D /* SceneDelegate.swift in Sources */,
+				B570179825DFED66002FEE4D /* HistoryListManager.swift in Sources */,
 				B570179225DFE98C002FEE4D /* HistoryListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
