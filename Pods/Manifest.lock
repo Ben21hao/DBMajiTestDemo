@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (5.4.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - FMDB
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FMDB
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+
+PODFILE CHECKSUM: 17cd4a2c48298efc8c60a5d425a0a2dad4ef78a4
+
+COCOAPODS: 1.9.3

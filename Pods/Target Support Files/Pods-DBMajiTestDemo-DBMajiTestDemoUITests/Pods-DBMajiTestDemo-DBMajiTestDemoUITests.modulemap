@@ -1,0 +1,6 @@
+framework module Pods_DBMajiTestDemo_DBMajiTestDemoUITests {
+  umbrella header "Pods-DBMajiTestDemo-DBMajiTestDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
