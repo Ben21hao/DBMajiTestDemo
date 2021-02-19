@@ -11,19 +11,37 @@ import XCTest
 
 class DBMajiTestDemoTests: XCTestCase {
 
+    var dbManager: HistoryListManager!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        dbManager = HistoryListManager.shared
+        
     }
-
+    
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        dbManager = nil
+        
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testDBCreate() {
+        dbManager.createDBTable()
+        XCTAssertTrue(dbManager.tableExist == true, "创建数据库成功")
     }
-
+    
+    func testDBInsert() {
+        if !dbManager.tableExist {
+            return
+        }
+        dbManager.insertDBTable(content: "测试内容")
+        XCTAssertTrue(dbManager.insertSuccess == true, "数据插入成功成功")
+    }
+    func testDBQuery() {
+        let array = dbManager.queryDBTable()
+        XCTAssertTrue(array.count > 0, "查询成功")
+    }
+    
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
